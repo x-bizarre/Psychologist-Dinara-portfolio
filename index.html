@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динара Абдуллаева – Психолог в Ташкенте | Помощь при тревоге и депрессии</title>
+    <meta name="description" content="Профессиональный психолог в Ташкенте. Когнитивно-поведенческая терапия. Консультации офлайн и онлайн.">
+    
+    <meta property="og:title" content="Динара Абдуллаева – Психолог в Ташкенте">
+    <meta property="og:description" content="Помогу справиться с тревогой и обрести внутреннюю опору">
+    <meta property="og:image" content="./images/og-image.png">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --peach: #FFB4A2;
+            --coral: #FF6B6B;
+            --mint: #95E1D3;
+            --sage: #86A387;
+            --cream: #FFF9F0;
+            --warm-white: #FFFBF7;
+            --dark: #2D3142;
+            --gray: #6B7280;
+            --light-gray: #E5E7EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--dark);
+            line-height: 1.7;
+            background: var(--warm-white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            letter-spacing: -0.03em;
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 5vw, 3.75rem);
+            letter-spacing: -0.02em;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+        
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: none;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--coral) 0%, var(--peach) 100%);
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.25);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.35);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--dark);
+            color: var(--dark);
+        }
+        
+        .btn-outline:hover {
+            background: var(--dark);
+            color: white;
+        }
+        
+        /* Blob Backgrounds */
+        .blob {
+            position: absolute;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            opacity: 0.08;
+            z-index: 0;
+        }
+        
+        .blob-1 {
+            width: 600px;
+            height: 600px;
+            background: var(--peach);
+            top: -200px;
+            right: -100px;
+            animation: morph 20s ease-in-out infinite;
+        }
+        
+        .blob-2 {
+            width: 400px;
+            height: 400px;
+            background: var(--mint);
+            bottom: -150px;
+            left: -100px;
+            animation: morph 25s ease-in-out infinite reverse;
+        }
+        
+        @keyframes morph {
+            0%, 100% {
+                border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                transform: translate(20px, -20px) rotate(90deg);
+            }
+            50% {
+                border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+                transform: translate(-20px, 20px) rotate(180deg);
+            }
+            75% {
+                border-radius: 70% 30% 50% 50% / 30% 70% 50% 50%;
+                transform: translate(20px, 20px) rotate(270deg);
+            }
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%);
+            padding: 140px 0 80px;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 80px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: white;
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--coral);
+            margin-bottom: 28px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--coral);
+            border-radius: 50%;
+        }
+        
+        .hero h1 {
+            margin-bottom: 28px;
+            color: var(--dark);
+        }
+        
+        .hero h1 .accent {
+            background: linear-gradient(135deg, var(--coral), var(--peach));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            line-height: 1.8;
+            max-width: 540px;
+        }
+        
+        .hero-image {
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* Декоративный blob позади фото */
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            background: linear-gradient(135deg, var(--peach), var(--mint));
+            border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+            opacity: 0.2;
+            top: 20px;
+            left: 20px;
+            z-index: 0;
+            animation: morph 15s ease-in-out infinite;
+        }
+        
+        /* Градиентная рамка вокруг фото */
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            background: linear-gradient(135deg, var(--coral), var(--peach), var(--mint));
+            border-radius: 30px;
+            z-index: 0;
+            opacity: 0.6;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 28px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 1;
+            display: block;
+            object-fit: cover;
+            /* Автоматическое кадрирование если фото не идеальное */
+            aspect-ratio: 4/5;
+        }
+        
+        /* Issues */
+        .issues {
+            background: var(--warm-white);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-tag {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--coral);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-top: 20px;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .issues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .issue-card {
+            background: white;
+            padding: 40px 32px;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: 1px solid rgba(255,180,162,0.1);
+        }
+        
+        .issue-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(255,107,107,0.15);
+            border-color: var(--peach);
+        }
+        
+        .issue-card h3 {
+            margin-bottom: 14px;
+            color: var(--dark);
+        }
+        
+        .issue-card p {
+            color: var(--gray);
+            line-height: 1.7;
+        }
+        
+        /* About */
+        .about {
+            background: var(--cream);
+        }
+        
+        .about-content {
+            max-width: 850px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .about-text {
+            font-size: 1.125rem;
+            color: var(--gray);
+            margin-bottom: 24px;
+            line-height: 1.9;
+        }
+        
+        .credentials {
+            background: white;
+            padding: 48px;
+            border-radius: 28px;
+            margin-top: 48px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255,180,162,0.15);
+        }
+        
+        .credentials h3 {
+            margin-bottom: 28px;
+            color: var(--dark);
+        }
+        
+        .credentials ul {
+            list-style: none;
+            display: grid;
+            gap: 18px;
+        }
+        
+        .credentials li {
+            padding-left: 36px;
+            position: relative;
+            color: var(--gray);
+            font-size: 1.05rem;
+        }
+        
+        .credentials li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, var(--coral), var(--peach));
+            border-radius: 50%;
+        }
+        
+        /* Process */
+        .process {
+            background: var(--warm-white);
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 32px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 40px 28px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.04);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(149,225,211,0.2);
+        }
+        
+        .step:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(149,225,211,0.2);
+        }
+        
+        .step-number {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, var(--mint), var(--sage));
+            color: white;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 auto 24px;
+            font-family: 'Fraunces', serif;
+        }
+        
+        .step h3 {
+            margin-bottom: 14px;
+            color: var(--dark);
+        }
+        
+        .step p {
+            color: var(--gray);
+            line-height: 1.7;
+        }
+        
+        /* Pricing */
+        .pricing {
+            background: var(--cream);
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .price-card {
+            background: white;
+            padding: 48px 40px;
+            border-radius: 28px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--peach);
+            box-shadow: 0 20px 60px rgba(255,107,107,0.15);
+        }
+        
+        .price-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .price {
+            font-size: 3.25rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--coral), var(--peach));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 28px 0;
+            font-family: 'Fraunces', serif;
+        }
+        
+        .price-card ul {
+            list-style: none;
+            margin-bottom: 32px;
+            flex-grow: 1;
+        }
+        
+        .price-card li {
+            padding: 14px 0 14px 32px;
+            position: relative;
+            color: var(--gray);
+        }
+        
+        .price-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 20px;
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(135deg, var(--mint), var(--sage));
+            border-radius: 50%;
+        }
+        
+        .price-card .btn {
+            width: 100%;
+            text-align: center;
+            margin-top: auto;
+        }
+        
+        /* FAQ */
+        .faq {
+            background: var(--warm-white);
+        }
+        
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+            display: grid;
+            gap: 18px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        details {
+            background: white;
+            padding: 32px 36px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            border: 1px solid transparent;
+        }
+        
+        details:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        }
+        
+        details[open] {
+            border-color: var(--peach);
+            box-shadow: 0 12px 40px rgba(255,107,107,0.12);
+        }
+        
+        summary {
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--dark);
+            list-style: none;
+            position: relative;
+            padding-right: 44px;
+            font-family: 'Fraunces', serif;
+        }
+        
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        summary::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--coral), var(--peach));
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        
+        summary::before {
+            content: '+';
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 600;
+            z-index: 1;
+            transition: transform 0.3s ease;
+        }
+        
+        details[open] summary::before {
+            transform: translateY(-50%) rotate(45deg);
+        }
+        
+        details p {
+            margin-top: 18px;
+            color: var(--gray);
+            line-height: 1.8;
+        }
+        
+        /* Contact */
+        .contact {
+            background: var(--dark);
+            color: white;
+        }
+        
+        .contact .section-tag {
+            color: var(--peach);
+        }
+        
+        .contact .section-header h2 {
+            color: white;
+        }
+        
+        .contact .section-subtitle {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .contact-form {
+            max-width: 680px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.05);
+            padding: 56px;
+            border-radius: 28px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 14px;
+            font-size: 1rem;
+            font-family: 'DM Sans', sans-serif;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(255,255,255,0.4);
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--peach);
+            background: rgba(255,255,255,0.12);
+            box-shadow: 0 0 0 4px rgba(255,180,162,0.15);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        select {
+            cursor: pointer;
+        }
+        
+        select option {
+            background: var(--dark);
+            color: white;
+        }
+        
+        .form-notice {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+            text-align: center;
+            margin-top: 18px;
+        }
+        
+        .form-notice a {
+            color: var(--peach);
+            text-decoration: none;
+            border-bottom: 1px solid var(--peach);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1A1D2E;
+            color: rgba(255,255,255,0.7);
+            padding: 60px 0 32px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 12px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--peach);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        
+        .social-links a {
+            width: 44px;
+            height: 44px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .social-links a:hover {
+            background: linear-gradient(135deg, var(--coral), var(--peach));
+            border-color: transparent;
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 32px;
+            text-align: center;
+            color: rgba(255,255,255,0.4);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 70px 0;
+            }
+            
+            .container {
+                padding: 0 20px;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 100px 0 60px;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+            
+            .hero-text {
+                order: 2;
+            }
+            
+            .hero-image {
+                order: 1;
+                text-align: center;
+            }
+            
+            .hero-image img {
+                max-width: 340px;
+            }
+            
+            .issues-grid,
+            .process-steps,
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form,
+            .credentials {
+                padding: 36px 28px;
+            }
+            
+            .blob-1,
+            .blob-2 {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="blob blob-1"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">Психолог в Ташкенте</span>
+                    <h1>Помогу справиться с <span class="accent">тревогой</span> и обрести внутреннюю опору</h1>
+                    <p>Когнитивно-поведенческая терапия для тех, кто хочет разобраться в себе и начать жить полноценно. Работаю офлайн и онлайн.</p>
+                    <a href="#contact" class="btn btn-primary">Записаться на консультацию</a>
+                </div>
+                <div class="hero-image">
+                    <img src="./images/dinara-photo.jpg" alt="Динара Абдуллаева - Психолог в Ташкенте" loading="eager">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="issues" id="problems">
+        <div class="blob blob-2"></div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Когда обращаться</div>
+                <h2>Я помогаю справиться с этими сложностями</h2>
+            </div>
+            <div class="issues-grid">
+                <div class="issue-card">
+                    <h3>Тревога и панические атаки</h3>
+                    <p>Постоянное беспокойство, необъяснимые страхи, панические атаки мешают жить полноценно</p>
+                </div>
+                <div class="issue-card">
+                    <h3>Депрессия и апатия</h3>
+                    <p>Потеря интереса к жизни, усталость, чувство безысходности, нет сил на обычные дела</p>
+                </div>
+                <div class="issue-card">
+                    <h3>Проблемы в отношениях</h3>
+                    <p>Конфликты с партнёром, семейные кризисы, сложности в общении с близкими</p>
+                </div>
+                <div class="issue-card">
+                    <h3>Низкая самооценка</h3>
+                    <p>Неуверенность в себе, самокритика, страх оценки окружающих, сложности с принятием решений</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="section-header">
+                    <div class="section-tag">О психологе</div>
+                    <h2>Динара Абдуллаева</h2>
+                </div>
+                <p class="about-text">Практикующий психолог с опытом работы более 5 лет. Моя специализация — помощь людям, переживающим тревожные состояния, депрессию, семейные конфликты и проблемы с самооценкой.</p>
+                
+                <p class="about-text">Я работаю в рамках когнитивно-поведенческой терапии (КПТ) — это научно обоснованный метод, который помогает изменить негативные мысли и паттерны поведения, мешающие вам жить счастливо.</p>
+                
+                <p class="about-text">Для меня важно создать безопасное пространство, где вы можете быть собой, говорить о своих переживаниях без страха осуждения и вместе найти путь к изменениям.</p>
+                
+                <div class="credentials">
+                    <h3>Образование и квалификация</h3>
+                    <ul>
+                        <li>Магистр психологии (Национальный университет Узбекистана)</li>
+                        <li>Сертификация по когнитивно-поведенческой терапии</li>
+                        <li>5 лет частной практики</li>
+                        <li>Опыт работы в реабилитационном центре</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Процесс</div>
+                <h2>Как проходит консультация</h2>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Знакомство</h3>
+                    <p>Вы рассказываете о том, что вас беспокоит. Я задаю уточняющие вопросы, чтобы лучше понять ситуацию</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Определяем запрос</h3>
+                    <p>Вместе формулируем цель работы и выбираем подходящие методы терапии</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Работаем над решением</h3>
+                    <p>Исследуем причины проблемы, учимся новым способам мышления и поведения</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Подводим итоги</h3>
+                    <p>Обсуждаем результаты сессии и даём рекомендации для самостоятельной работы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Форматы</div>
+                <h2>Цены на консультации</h2>
+            </div>
+            <div class="pricing-cards">
+                <div class="price-card">
+                    <h3>Консультация офлайн</h3>
+                    <div class="price">350 000 сум</div>
+                    <ul>
+                        <li>Личная встреча в Ташкенте</li>
+                        <li>Длительность: 50 минут</li>
+                        <li>Район Мирабад</li>
+                        <li>Комфортная приватная обстановка</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Записаться</a>
+                </div>
+                <div class="price-card">
+                    <h3>Консультация онлайн</h3>
+                    <div class="price">300 000 сум</div>
+                    <ul>
+                        <li>Встреча по Zoom или Telegram</li>
+                        <li>Длительность: 50 минут</li>
+                        <li>Из любой точки мира</li>
+                        <li>Полная конфиденциальность</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Вопросы</div>
+                <h2>Часто спрашивают</h2>
+            </div>
+            <div class="faq-list">
+                <details>
+                    <summary>Как подготовиться к первой встрече?</summary>
+                    <p>Специальной подготовки не требуется. Главное — быть готовым открыто говорить о том, что вас беспокоит. Можете заранее подумать, какие изменения в жизни вы хотели бы увидеть после работы с психологом.</p>
+                </details>
+                
+                <details>
+                    <summary>Сколько длится одна консультация?</summary>
+                    <p>Стандартная консультация длится 50 минут. Этого времени достаточно для глубокой проработки запроса и при этом не вызывает эмоционального переутомления.</p>
+                </details>
+                
+                <details>
+                    <summary>Соблюдается ли конфиденциальность?</summary>
+                    <p>Абсолютно. Всё, о чём мы говорим на сессиях, остаётся между нами. Это основной принцип психологической этики. Исключение — ситуации, когда есть угроза жизни, но об этом я обязательно сообщу заранее.</p>
+                </details>
+                
+                <details>
+                    <summary>Как часто нужно ходить к психологу?</summary>
+                    <p>Обычно мы встречаемся раз в неделю. Это оптимальный ритм для того, чтобы работа была эффективной, и у вас было время применять новые навыки в жизни. В зависимости от запроса частота может меняться.</p>
+                </details>
+                
+                <details>
+                    <summary>Можно ли работать только онлайн?</summary>
+                    <p>Да, онлайн-консультации так же эффективны, как и личные встречи. Главное — наличие стабильного интернета и уединённого места, где вас никто не побеспокоит во время сессии.</p>
+                </details>
+                
+                <details>
+                    <summary>Как происходит оплата?</summary>
+                    <p>Оплата производится после консультации. Офлайн — наличными или переводом. Онлайн — переводом на карту. Реквизиты отправлю после записи.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Контакты</div>
+                <h2>Записаться на консультацию</h2>
+                <p class="section-subtitle">Заполните форму, и я свяжусь с вами в течение 24 часов</p>
+            </div>
+            <form class="contact-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required placeholder="Как к вам обращаться">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact">Телефон или Telegram</label>
+                    <input type="text" id="contact" name="contact" required placeholder="+998 90 123 45 67 или @username">
+                </div>
+                
+                <div class="form-group">
+                    <label for="format">Формат консультации</label>
+                    <select id="format" name="format" required>
+                        <option value="">Выберите формат</option>
+                        <option value="Офлайн">Офлайн (350 000 сум)</option>
+                        <option value="Онлайн">Онлайн (300 000 сум)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Удобное время</label>
+                    <input type="text" id="time" name="time" placeholder="Например: будни после 18:00">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Кратко о запросе (необязательно)</label>
+                    <textarea id="message" name="message" placeholder="Что вас беспокоит? Это поможет мне лучше подготовиться к встрече"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                </div>
+                
+                <p class="form-notice">
+                    Нажимая кнопку, вы соглашаетесь с <a href="./privacy.html">Политикой конфиденциальности</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Ташкент, район Мирабад</p>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2145484f4053400f51525842494e4d4e4648525561464c40484d0f424e4c">[email&#160;protected]</a></p>
+                    <p>+998 90 123 45 67</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/dinara.psy" target="_blank" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/dinara_psy" target="_blank" aria-label="Telegram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Документы</h3>
+                    <a href="./privacy.html">Политика конфиденциальности</a>
+                    <a href="./terms.html">Пользовательское соглашение</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Динара Абдуллаева. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            const scriptURL = 'ВСТАВЬТЕ_СЮДА_URL_ВАШЕГО_GOOGLE_APPS_SCRIPT';
+            
+            fetch(scriptURL, {
+                method: 'POST',
+                body: JSON.stringify(data),
+            })
+            .then(response => {
+                alert('Спасибо! Ваша заявка отправлена. Я свяжусь с вами в ближайшее время.');
+                this.reset();
+            })
+            .catch(error => {
+                alert('Что-то пошло не так. Пожалуйста, напишите мне напрямую в Telegram: @dinara_psy');
+                console.error('Error:', error);
+            });
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                
